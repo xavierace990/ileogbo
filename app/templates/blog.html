@@ -279,7 +279,7 @@
                         <img src="{{ post.image.url }}" class="small-img mb-3" alt="{{ post.title }}">
                         <h5 class="card-title">{{ post.title }}</h5>
                         <p class="card-text">{{ post.content|truncatechars:100 }}</p>
-                        <p class="card-text">Posted by {{ post.author.username }} on <br> {{ post.published_date }}</p>
+                        <p class="card-text text-muted">Posted by {{ post.author.username }} on <br> {{ post.published_date }}</p>
                         <!--<p class="card-text"><small class="text-muted">{{ post.published_date }}</small></p>-->
                         <a href="{% url 'blog_detail' pk=post.pk %}" style="background-color: #812928;color:white;" class="btn btn">Read More</a>
                     </div>
