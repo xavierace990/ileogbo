@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ileogbo.up.railway.app']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://ileogbo.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
