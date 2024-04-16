@@ -209,7 +209,8 @@
       <img src="{{ post.image.url }}" class="img-fluid small-img" alt="{{ post.title }}">
       <h1>{{ post.title }}</h1>
       <p>{{ post.content }}</p>
-      <p>{{ post.published_date }}</p>
+      <p class="card-text text-muted">Posted by {{ post.author.username }}</p>
+      <p class='text-muted'>{{ post.published_date }}</p>
     </div>
     <div class="col-md-4">
         <div class="sidebar">
